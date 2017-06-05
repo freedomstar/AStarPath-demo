@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->resize(400,460);
     QPushButton *btn=new QPushButton(this);
-    btn->setText(tr("Restset"));
+    btn->setText(tr("Reset"));
     btn->move(170,15);
     btn->resize(60,20);
     connect(btn,SIGNAL(clicked()),this,SLOT(resetAstarPath()));
